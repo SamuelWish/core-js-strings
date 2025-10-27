@@ -54,8 +54,10 @@ function isString(value) {
  *   concatenateStrings('aa', '') => 'aa'.
  *   concatenateStrings('', 'bb') => 'bb'
  */
-function concatenateStrings(/* value1, value2 */) {
-  throw new Error('Not implemented');
+function concatenateStrings(value1, value2) {
+  let pair = '';
+  pair = pair.concat(value1, value2);
+  return pair;
 }
 
 /**
