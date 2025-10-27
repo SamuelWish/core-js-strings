@@ -409,10 +409,10 @@ function extractNameFromTemplate(/* value */) {
  *   unbracketTag('<span>') => 'span'
  *   unbracketTag('<a>') => 'a'
  */
-function unbracketTag(/* str */) {
-  throw new Error('Not implemented');
+function unbracketTag(str) {
+  if (typeof str !== 'string' || str.length < 2) return '';
+  return str.slice(1, -1);
 }
-
 /**
  * Extracts e-mails from single string with e-mails list delimited by semicolons
  *
